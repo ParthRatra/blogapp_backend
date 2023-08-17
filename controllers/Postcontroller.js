@@ -10,6 +10,8 @@ exports.createposting=async(req,res)=>{
             user,title,body
         })
         // data base mai vo save hogya
+
+        //dekh object ke sath create kr rhe  hai toh .create use hoga and but hm phele upr project bn liye toh .save use kr rhe hai
         const saveitpost=await nyapost.save()
         res.json({
             post: saveitpost,
